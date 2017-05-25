@@ -20,3 +20,11 @@ $ bash setup.sh {version}
 ```
 $ /usr/local/bin/tmux
 ```
+
+## tmux.conf
+for scrolling
+
+```
+set-option -g mouse on
+bind -n WheelUpPane if-shell -F -t = "#{mouse_any_flag}" "send-keys -M" "if -Ft= '#{pane_in_mode}' 'send-keys -M' 'copy-mode -e'"
+```
