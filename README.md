@@ -22,7 +22,7 @@ $ /usr/local/bin/tmux
 ```
 
 ## tmux.conf
-for scrolling
+set following on ~/.tmux.conf for scrolling .
 
 ```
 set-option -g mouse on
